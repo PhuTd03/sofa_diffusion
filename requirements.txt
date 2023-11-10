@@ -1,0 +1,8 @@
+diffusers==0.14.0
+accelerate==0.16.0
+transformers
+ftfy
+tensorboard==1.15.0
+Jinja2==3.1.2
+chardet
+protobuf>=3.20.2

@@ -718,6 +718,8 @@ def main():
         if args.push_to_hub:
             repo.push_to_hub(commit_message="End of training", blocking=False, auto_lfs_prune=True)
 
+    model_state_dict = unet.state_dict()
+    torch.save(model_state_dict, "finetuned_model.h5")
     accelerator.end_training()
 
 
